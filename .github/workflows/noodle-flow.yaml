@@ -4,13 +4,13 @@ on:
     paths:
       - 'README.md'
  
- jobs:
+jobs:
   get_dad_joke:
     name: Get a Dad Joke
     runs-on: windows-latest
     steps:
-      run: |
-        $dadJoke = (Invoke-RestMethod -Method 'Get' -Uri 'https://www.reddit.com/r/dadjokes/random.json?limit=1').data.children[0].data
-        Write-Host $dadJoke.title
-        Write-Host $dadJoke.selftext
-      shell: powershell
+      - name: Get latest from /r/dadjokes and print
+        run: |
+          $dadJoke = (Invoke-RestMethod -Method 'Get' -Uri 'https://www.reddit.com/r/dadjokes/random.json?limit=1').data.children[0].data
+          Write-Host $dadJoke.title
+          Write-Host $dadJoke.selftext
