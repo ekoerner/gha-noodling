@@ -1,0 +1,16 @@
+name: Noodling with GitHub Actions
+on:
+  push:
+    paths:
+      - 'README.md'
+ 
+ jobs:
+  get_dad_joke:
+    name: Get a Dad Joke
+    runs-on: windows-latest
+    steps:
+      run: |
+        $dadJoke = (Invoke-RestMethod -Method 'Get' -Uri 'https://www.reddit.com/r/dadjokes/random.json?limit=1').data.children[0].data
+        Write-Host $dadJoke.title
+        Write-Host $dadJoke.selftext
+      shell: powershell
