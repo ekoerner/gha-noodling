@@ -6,13 +6,9 @@ and also seeing how many levels of header i can use :-)
 ##### still going with the headers, i see
 ###### six would appear to be the limit
 **Two asterisks? That's bold of you!**
+*Italics? Not sure I can keep the pun game going. Was fun while it lasted*
 
 <! --- 
-Heading	# H1
-## H2
-### H3
-Bold	**bold text**
-Italic	*italicized text*
 Blockquote	> blockquote
 Ordered List	1. First item
 2. Second item
