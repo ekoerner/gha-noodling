@@ -5,21 +5,24 @@ on:
       - 'README.md'
  
 jobs:
-  get_dad_joke:
-    name: Get a Dad Joke
+  sample_rest_user:
+    - name: Get some user from some DB
     runs-on: ubuntu-latest
     steps:
-      - name: Git (see what I did there) another
+      - name: Retrieve user
         id: cmaRestGet
         uses: fjogeleit/http-request-action@v1
         with:
           url: ${{ format('https://reqres.in/api/users/{0}', secrets.USER_ID) }}
           method: 'GET'
-      - name: Print Joke Number 2
+      - name: Print user information
         run: |
           echo ${{ steps.cmaRestGet.outputs.headers }}
           echo ${{ steps.cmaRestGet.outputs.response }}   
-      - name: Get random from /r/dadjokes and print
+  get_dad_joke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: A dad joke is your reward!
         run: |
           $dadJoke = (Invoke-RestMethod -Method 'Get' -Uri 'https://www.reddit.com/r/dadjokes/random.json?limit=1').data.children[0].data
           Write-Host $dadJoke.title

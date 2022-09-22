@@ -4,7 +4,8 @@
 and also seeing how many levels of header i can use :-)
 #### triggering more pipeline updates
 ##### still going with the headers, i see
-**that's bold of you**
+###### six would appear to be the limit
+**Two asterisks? That's bold of you!**
 
 <! --- 
 Heading	# H1
