@@ -10,8 +10,8 @@ and also seeing how many levels of header i can use :-)
 >You miss 100% of the shows you don't take
 >- Wayne Gretzky
 >   - Michael Scott
-<! --- 
-Blockquote	> blockquote
+
+<!-- 
 Ordered List	1. First item
 2. Second item
 3. Third item
@@ -48,6 +48,5 @@ Emoji
 (see also Copying and Pasting Emoji)	That is so funny! :joy:
 Highlight	I need to highlight these ==very important words==.
 Subscript	H~2~O
-Superscript	X^2^
-
---->
+Superscript	X^2^ 
+-->
