@@ -1,4 +1,4 @@
-# gha-noodling
+# :see_no_evil: :hear_no_evil: :speak_no_evil:
 ## wild water fowl wanderings
 ### testing move to ubuntu-latest and pwsh (powershell core)
 and also seeing how many levels of header i can use :-)
