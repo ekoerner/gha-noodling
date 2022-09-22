@@ -5,7 +5,7 @@ and also seeing how many levels of header i can use :-)
 #### triggering more pipeline updates
 ##### still going with the headers, i see
 ###### six would appear to be the limit
-**Two asterisks? That's bold of you!**
+**Two asterisks? That's bold of you!**  
 *Italics? Not sure I can keep the pun game going. Was fun while it lasted*
 >"You miss 100% of the shows you don't take"
 >   
