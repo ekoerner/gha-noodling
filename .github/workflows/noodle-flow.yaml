@@ -23,5 +23,7 @@ jobs:
           method: 'GET'
       - name: Print Joke Number 2
         run: |
+          echo ${{ steps.cmaRestGet.outputs.headers }}
+          echo ${{ steps.cmaRestGet.outputs.response }}
           echo ${{ fromJson(steps.cmaRestGet.outputs.response).data.children[0].data.title }}
           echo ${{ fromJson(steps.cmaRestGet.outputs.response).data.children[0].data.selftext }}      
