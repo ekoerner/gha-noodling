@@ -22,6 +22,6 @@ jobs:
           url: 'https://www.reddit.com/r/dadjokes/random.json?limit=1'
           method: 'GET'
       - name: Print Joke Number 2
-          run: |
-            echo ${{ fromJson(steps.cmaRestGet.outputs.response).data.children[0].data.title }}
-            echo ${{ fromJson(steps.cmaRestGet.outputs.response).data.children[0].data.selftext }}      
+        run: |
+          echo ${{ fromJson(steps.cmaRestGet.outputs.response).data.children[0].data.title }}
+          echo ${{ fromJson(steps.cmaRestGet.outputs.response).data.children[0].data.selftext }}      
