@@ -6,10 +6,10 @@ on:
  
 jobs:
   sample_rest_user:
-    - name: Get some user from some DB
+    name: Get some user from some DB
     runs-on: ubuntu-latest
     steps:
-      - name: Retrieve user
+      - name: Retrieve user via community action
         id: cmaRestGet
         uses: fjogeleit/http-request-action@v1
         with:
@@ -20,9 +20,10 @@ jobs:
           echo ${{ steps.cmaRestGet.outputs.headers }}
           echo ${{ steps.cmaRestGet.outputs.response }}   
   get_dad_joke:
+    name: A dad joke is your reward!
     runs-on: ubuntu-latest
     steps:
-      - name: A dad joke is your reward!
+      - name: Get Dad Joke via pwsh
         run: |
           $dadJoke = (Invoke-RestMethod -Method 'Get' -Uri 'https://www.reddit.com/r/dadjokes/random.json?limit=1').data.children[0].data
           Write-Host $dadJoke.title
