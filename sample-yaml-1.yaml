@@ -1,0 +1,9 @@
+properties:
+  url: https://www.google.com
+  username: ekoerner
+  organization: mondelez
+  
+more_properties:
+  fruit: orange
+  bread: rye
+  city: Perrysburg
