@@ -7,23 +7,23 @@ on:
  
 jobs:
   sample_rest_user:
-    name: Get some user from some DB
+    name: Validate Mule Configuration
     runs-on: ubuntu-latest
     steps:
-      - name: Validate Error Configuration
-        id: cmaRestGet
+      - name: Call Mule Config Validation API
+        id: muleValidation
         uses: fjogeleit/http-request-action@v1
         with:
           url: http://mule-app-config.us-e2.cloudhub.io/api/errorConfig/validate
           method: 'POST'
           data: |
             {
-              "servicenowGroupId": "679434f053231300e321ddeeff7b12d8"
+              "servicenowGroupId": ${{ secrets.SERVICENOW_GROUP }}
             }
       - name: Validation response
         run: |
-          echo ${{ steps.cmaRestGet.outputs.valid }}
-          echo ${{ steps.cmaRestGet.outputs.error }}   
+          echo ${{ fromJson(steps.muleValidation.outputs.response.valid }}
+          echo ${{ fromJson(steps.muleValidation.outputs.response.error }} 
   get_dad_joke:
     name: A dad joke is your reward!
     runs-on: ubuntu-latest
