@@ -20,6 +20,9 @@ and also seeing how many levels of header i can use :-)
 
 A ~Table is next~ but ^I'm in a hurry and it seems like a pain in the butt^
 
+I wonder if this will be a valid emoji?
+:sad:
+
 <!-- 
 
 Unordered List	- First item
