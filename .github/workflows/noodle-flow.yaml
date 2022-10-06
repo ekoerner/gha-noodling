@@ -23,8 +23,6 @@ jobs:
       - name: Validation response
         run: |
           echo "Hello there"
-          # echo ${{ fromJson(steps.muleValidation.outputs.response.valid) }}
-          # echo ${{ fromJson(steps.muleValidation.outputs.response.error) }} 
   get_dad_joke:
     name: A dad joke is your reward!
     runs-on: ubuntu-latest
