@@ -27,36 +27,4 @@ Cillum nisi mollit sint est, qui buffalo velit laborum kielbasa chislic biltong.
 Nulla quis chuck eiusmod bacon.  
 Mollit pariatur swine ullamco, eu lorem picanha pig t-bone.  
 Fugiat do deserunt kevin lorem sed ex pariatur hamburger strip steak ham quis irure.  
-
-<!-- 
-
-Unordered List	- First item
-- Second item
-- Third item
-
-
-Table	| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-Fenced Code Block	```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-Footnote	Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-Heading ID	### My Great Heading {#custom-id}
-Definition List	term
-: definition
-Strikethrough	~~The world is flat.~~
-
-Emoji
-(see also Copying and Pasting Emoji)	That is so funny! :joy:
-Highlight	I need to highlight these ==very important words==.
-Subscript	H~2~O
-Superscript	X^2^ 
--->
+Boudin beef rump bresaola andouille landjaeger.  
