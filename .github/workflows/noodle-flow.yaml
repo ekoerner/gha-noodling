@@ -10,7 +10,19 @@ jobs:
     name: Validate Mule Configuration
     runs-on: ubuntu-latest
     steps:
-      - name: Call Mule Config Validation API
+      - uses: actions/checkout@v1
+
+      - name: Get Error Configuration
+        id: getErrorConfig
+        uses: jbutcher5/read-yaml@main
+        with:
+          file: './properties/sample-1.yaml'
+          key-path: '["servicenow.group"]'
+      
+      - name: Debug output
+        run: echo "${{ steps.getErrorConfig.outputs.data }}"
+
+      - name: Validate Error Configuration
         id: muleValidation
         uses: fjogeleit/http-request-action@v1
         with:
@@ -20,6 +32,7 @@ jobs:
             {
               "servicenowGroupId": ${{ format('{0}', secrets.SERVICENOW_GROUP) }}
             }
+      
       - name: Validation response
         run: |
           echo "Hello there"
