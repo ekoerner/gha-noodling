@@ -33,3 +33,4 @@ Shoulder prosciutto chislic, beef ribs landjaeger salami ham hock ball tip bacon
 Tenderloin hamburger sirloin swine tongue beef boudin doner brisket ham bacon turducken cow strip steak salami.  
 Landjaeger alcatra cupim beef chislic jerky pork.  
 Frankfurter swine turducken sausage chuck.  
+Cow ham hock pastrami chicken, beef ribs alcatra jerky beef spare ribs pig chuck.  

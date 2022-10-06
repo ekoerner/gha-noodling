@@ -30,10 +30,7 @@ jobs:
         with:
           url: http://mule-app-config.us-e2.cloudhub.io/api/errorConfig/validate
           method: 'POST'
-          data: |
-            {
-              "servicenowGroupId": ${{ format('{0}', secrets.SERVICENOW_GROUP) }}
-            }
+          data: ${{ steps.getErrorConfig.outputs.data }}
       
       - name: Validation response
         run: |
