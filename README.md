@@ -18,7 +18,7 @@ and also seeing how many levels of header i can use :-)
 
 [Anypoint Studio](https://anypoint.mulesoft.com/)
 
-~Table is next~ ^but I'm in a hurry and it seems like a pain in the butt^
+A ~Table is next~ but ^I'm in a hurry and it seems like a pain in the butt^
 
 <!-- 
 
