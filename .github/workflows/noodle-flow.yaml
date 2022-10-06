@@ -10,16 +10,20 @@ jobs:
     name: Get some user from some DB
     runs-on: ubuntu-latest
     steps:
-      - name: Retrieve user via community action
+      - name: Validate Error Configuration
         id: cmaRestGet
         uses: fjogeleit/http-request-action@v1
         with:
-          url: ${{ format('https://reqres.in/api/users/{0}', secrets.USER_ID) }}
-          method: 'GET'
-      - name: Print user information
+          url: http://mule-app-config.us-e2.cloudhub.io/api/errorConfig/validate
+          method: 'POST'
+          data: |
+            {
+              "servicenowGroupId": "679434f053231300e321ddeeff7b12d8"
+            }
+      - name: Validation response
         run: |
-          echo ${{ steps.cmaRestGet.outputs.headers }}
-          echo ${{ steps.cmaRestGet.outputs.response }}   
+          echo ${{ steps.cmaRestGet.outputs.valid }}
+          echo ${{ steps.cmaRestGet.outputs.error }}   
   get_dad_joke:
     name: A dad joke is your reward!
     runs-on: ubuntu-latest

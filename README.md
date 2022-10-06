@@ -12,6 +12,10 @@ and also seeing how many levels of header i can use :-)
 >   \-Wayne Gretzky  
 >       \-Michael Scott
 
+- [x] Steal underpants
+- [ ] ???
+- [ ] Profit
+
 <!-- 
 Ordered List	1. First item
 2. Second item
