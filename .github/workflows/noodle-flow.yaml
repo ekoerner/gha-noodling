@@ -18,7 +18,7 @@ jobs:
           method: 'POST'
           data: |
             {
-              "servicenowGroupId": "${{ secrets.SERVICENOW_GROUP }}"
+              "servicenowGroupId": "679434f053231300e321ddeeff7b12d8"
             }
       - name: Validation response
         run: |
