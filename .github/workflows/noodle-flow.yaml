@@ -12,12 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Get Error Configuration
+      
+      - name: Get Error Configuration in JSON
         id: getErrorConfig
-        uses: jbutcher5/read-yaml@main
+        uses: fabasoad/yaml-json-xml-converter-action@main
         with:
-          file: './properties/sample-1.yaml'
-          key-path: '["servicenow.group"]'
+          path: './properties/error-config.yaml'
+          from: 'yaml'
+          to: 'json'
       
       - name: Debug output
         run: echo "${{ steps.getErrorConfig.outputs.data }}"

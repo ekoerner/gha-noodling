@@ -31,3 +31,4 @@ Boudin beef rump bresaola andouille landjaeger.
 Pancetta strip steak rump, leberkas tongue chislic biltong.  
 Shoulder prosciutto chislic, beef ribs landjaeger salami ham hock ball tip bacon tongue jerky flank frankfurter.  
 Tenderloin hamburger sirloin swine tongue beef boudin doner brisket ham bacon turducken cow strip steak salami.  
+Landjaeger alcatra cupim beef chislic jerky pork.  
